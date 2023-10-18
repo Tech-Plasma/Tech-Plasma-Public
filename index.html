@@ -15,26 +15,6 @@
         return <h1>This app is under construction. We are working on it..</h1>;
       }
      
-     function Main () {
-          const [timeout, SetTimeout] = useState(0)
-          const [hedder, setHedder] = useState('home')
-          const adds = ['home', 'about Us', 'Plays', 'hacked-eye-tool-kit', 'plasma birds']
-          useEffect(() => {
-               setTimeout(() => {
-                    setHedder({adds[Math.random(5)]})
-               }, 1000)
-          })
-          return (
-               <>
-                    <div class=''>
-                         <h1>{hedder}</h1>
-                    		<h1>This site is temporarily shut down</h1>
-                   </div>
-               		</Error>
-               </>
-          )
-     }
-     
       const container = document.getElementById('mydiv');
       const root = ReactDOM.createRoot(container);
       root.render(<Error />)
