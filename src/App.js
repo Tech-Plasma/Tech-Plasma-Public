@@ -10,7 +10,7 @@ export default function App () {
             }
             }>
                   <div style={ 
-                  {
+                  { 
                         background:"blue",
                         color:"white",
                         width:"100%",
