@@ -9,7 +9,7 @@ export default function App () {
                   margine:0,
             }
             }>
-                  <div style={
+                  <div style={ 
                   {
                         background:"blue",
                         color:"white",
