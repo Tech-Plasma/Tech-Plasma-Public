@@ -1,0 +1,42 @@
+* {
+      padding: 0%;
+      margin: 0%;
+}
+body {
+      display: block;
+      background-color: black;
+}
+.hedder{
+      position: fixed;
+      background-color: chartreuse;
+      color:darkred;
+      width: 100%;
+      font-size: large;
+}
+.comment-head{
+      position: fixed;
+      right:3%;
+      top:3%;
+      color:red;
+}
+.state-login {
+      position:absolute;
+      top:30%;
+      border-color: yellowgreen;
+      border: 3%;
+      width:100%;
+      height: 40%;
+}
+.setup-login-button{
+      left:10%;
+      position:relative;
+
+}
+.login-button {
+      position: absolute;
+      width: 50%;
+      background-color: chartreuse;
+      color:black;
+      font-size: xx-large;
+      left:10%;
+}
