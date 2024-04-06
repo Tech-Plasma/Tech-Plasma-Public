@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Tech PLasma</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+      <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+      <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+      <style src="/styleseet.css">
+            html {
+      scroll-behavior: smooth;
+}
+body {
+      background: linear-gradient(-45deg,rgb(109, 0, 252), #000000, #000770, #000000, #1e0072, rgb(109, 0, 252));
+      background-size: 400% 400%;
+      animation: gradient 30s ease infinite;
+      height: 100vh;
+}
+
+@keyframes gradient {
+      0% {
+            background-position: 0% 50%;
+      }
+      50% {
+            background-position: 100% 50%;
+      }
+      100% {
+            background-position: 0% 50%;
+      }
+}
+.hedder{
+      width:100%;
+      height:42px;
+      color:#fff;
+      position: fixed;
+      top:0%;
+      left:0%;
+
+      background: linear-gradient(-45deg,rgb(109, 0, 252),rgb(109, 0, 252),rgb(109, 0, 252), #00e1ff,rgb(109, 0, 252),rgb(109, 0, 252), rgb(109, 0, 252));
+      background-size: 400% 400%;
+      animation: hedder-gradient 5s linear infinite;
+}
+@keyframes hedder-gradient {
+      0% {
+            background-position: 0% 50%;
+      }
+      100% {
+            background-position: 100% 50%;
+      }
+}
+.hedder-text-name{
+      position: fixed;
+      left: 1%;
+      top:1%;
+      font-size: 20px;
+      color: #fff;
+      z-index: 1;
+}
+.logo-hedder-image{
+      position: absolute;
+      width: 100%;
+      background-repeat: no-repeat;
+      height:50%;
+      border-bottom: 5px white;
+      background-image: url('/plasma_logo.jpg');
+      z-index: -1;
+      background-color: #5c00f11c;
+      left:0%;
+}
+.tech_name{
+      position:absolute;
+      width:100%;
+      top:40%;
+      font-size: 30px;
+      color: #fff;
+      text-align: center;
+      animation: txt-logo-animation 5s linear;
+}
+@keyframes txt-logo-animation {
+      0% {
+            opacity: 0;
+      }
+      100%{
+            opacity: 1;
+      }
+}
+.say-welcome {
+      position: absolute;
+      top:0%;
+      left:10%;
+      font-size: 38px;
+}
+.arrow {
+      border:solid rgb(140, 0, 255);
+      border-width: 0 4px 4px 0;
+      display: inline-block;
+      padding: 10px;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      z-index: 1;
+}
+.arrow_position{
+      position: absolute;
+      top:0;
+      left:48%;
+      animation:arrow-animation 3s linear infinite;
+      align-items: center;
+}
+.arrow_primary_pose{
+      position: absolute;
+      width: 100%;
+      height:50%;
+}
+@keyframes arrow-animation {
+      0%{
+            top:100%;
+      }
+      45%{
+            top:95%;
+      }
+      55%{
+            top:100%
+      }
+      65%{
+            top:95%;
+      }
+      75%{
+            top:100%;
+      }
+      100%{
+            top:100%;
+      }
+      
+}
+.say-hello {
+      position: absolute;
+      width:100%;
+      top:90%;
+      animation: textAnimation 5s linear infinite;
+      font-size: 20px;
+      text-align: center;
+}
+@keyframes textAnimation {
+      0% {
+            color:#00e1ff;
+      }
+      25%{
+            color:#000770;
+      }
+      50%{
+            color:slateblue;
+      }
+      75%{
+            color:rgb(140, 0, 255);
+      }
+      100%{
+            color:#00e1ff;
+      }
+}
+.about {
+      position: absolute;
+      top:100%;
+      border-top: #fff;
+      width:100%;
+      height: 100%;
+      z-index: -1;
+}
+.about-contents {
+      position: absolute;
+      top:25%;
+      width: 100%;
+      height:80%;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+}
+      </style>
+      <script type="module">
+            async function sayHello() {
+                  let returnMessage;
+                  let date = new Date();
+                  let hour = date.getHours();
+                  if (hour < 12) {
+                        returnMessage = "Good Morning"
+                  } else if (hour < 16) {
+                        returnMessage = "Good Afternoon"
+                  } else {
+                        returnMessage = "Good Evening"
+                  }
+                  return returnMessage
+            }
+            document.getElementsByClassName('sayHello')[0].innerHTML = sayHello()
+      </script>
+</head>
+<body>
+<div class="hedder">
+      <div class="hedder-text-name"><b>Tech Plasma | Plasma Birds Studios</b></div>
+</div>
+<div class="logo-hedder-image">
+      <div class="tech_name">
+            <div class="say-welcome">Welcome To</div>      
+            <h1><b>Tech Plasma</b></h1>
+      </div>
+      <div class="say-hello">
+            <div class="sayHello"></div>
+      </div>
+</div>
+
+      <div class="arrow_primary_pose">
+            <a href="#about">
+            <div class="arrow_position">
+                  <i class="arrow"></i>
+            </div>
+            </a>
+      </div>
+<div id="about" class="about">
+      <h4 style="color:slateblue; text-align: center;">Our Mission</h4>
+      <h3 style="color:#fff; text-align: center;">Cybersecurity for everyone</h3>
+      <p style="color: #fff; text-align: center;">At Tech Plasma, we provide best cybersecurity features and protection for everyone</p>
+      <div class="about-contents">
+            <i class="fa fa-graduation-cap" style="font-size:48px;color:rgb(195, 0, 255);"></i><h2 style="color: rgb(195, 0, 255);">Education</h3>
+            <p>We strive to make cybersecurity education accessible and engaging for everyone, as we believe it is crucial for creating a safer and more secure digital environment.</p>
+            <i class="fa fa-comments-o" style="font-size:48px;color:rgb(195, 0, 255);"></i><h2 style="color: rgb(195, 0, 255);">Community</h3>
+            <p>Our supportive and inclusive community values collaboration, networking, and knowledge-sharing, recognizing that great ideas can come from anyone.</p>
+            <i style='font-size:48px;color:rgb(195, 0, 255);' class='fa'>&#xf0eb;</i><h3 style="color: rgb(195, 0, 255);">Innovation</h3>
+            <p>We encourage innovation and experimentation in cybersecurity education and recognize the importance of pushing boundaries and staying up to date.</p>
+            <i class='fa fa-hands' style='font-size:48px;color:red'></i>
+      </div>
+</div>
+</body>
+</html>
